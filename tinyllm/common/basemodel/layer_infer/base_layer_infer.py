@@ -1,7 +1,7 @@
 import torch 
 from typing import Dict, Iterable, Literal, Tuple, Union, List
-from tinyllm.common.basemodel.infer_struct import LayerInferState
-from tinyllm.common.basemodel.layer_infer.base_layer_infer import BaseLayerInfer
+from tinyllm.common.basemodel.infer_struct import InferStateInfo
+from tinyllm.common.basemodel.layer_weights.base_layer_weight import BaseLayerWeight
 
 class BaseLayerInfer:
     def __init__(self) -> None:

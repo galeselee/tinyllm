@@ -1,5 +1,5 @@
 import torch
-from lightllm.utils.log_utils import init_logger
+from tinyllm.utils.log_utils import init_logger
 
 logger = init_logger(__name__)
     

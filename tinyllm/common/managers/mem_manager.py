@@ -1,8 +1,8 @@
 import re
 import os
 import torch
-from lightllm.utils.log_utils import init_logger
-from lightllm.server.router.dynamic_prompt.shared_arr import SharedInt
+from tinyllm.utils.log_utils import init_logger
+from tinyllm.common.shared_arr import SharedInt
 
 logger = init_logger(__name__)
 
