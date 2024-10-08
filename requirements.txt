@@ -1,0 +1,14 @@
+matplotlib
+scipy
+loguru
+fairscale
+fire
+sentencepiece
+torch
+transformers
+einops
+packaging
+rpyc
+ninja
+safetensors
+triton
