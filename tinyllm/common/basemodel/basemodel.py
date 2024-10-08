@@ -5,8 +5,8 @@ from typing import final
 
 from tinyllm.common.basemodel.layer_weights.hf_load_utils import load_hf_weights
 from tinyllm.common.basemodel.infer_struct import InferStateInfo
-# from tinyllm.common.mem_manager import MemoryManager
-# from tinyllm.common.req_manager import ReqManager
+from tinyllm.common.managers.mem_manager import MemoryManager
+from tinyllm.common.managers.req_manager import ReqManager
 from tinyllm.utils.infer_utils import init_req_to_token_indexes
 from tinyllm.utils.build_utils import repair_config
 from tinyllm.common.basemodel.triton_kernel.copy_kv_index_to_req import copy_kv_index_to_req
