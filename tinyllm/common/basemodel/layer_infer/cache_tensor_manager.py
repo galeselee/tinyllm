@@ -15,15 +15,16 @@ class CacheTensorManager:
     def __init__(self, cache_dir: str = None):
         pass
 
-    def cache_env_in(self, is_cuda_graph: bool = False,
-                     cur_batch_size: int = 0,
-                     cuda_graph_max_batch_size: int = 0):
+    def cache_env_in(self, cur_batch_size: int = 0):
         return 
     
     def cache_env_out(self):
         return 
 
     def alloc_tensor(self, shape: Union[torch.Size, Iterable[int]], data_type: torch.dtype, device: str = "cuda") -> torch.Tensor:
-        return 
+        return torch.empty(shape, dtype=data_type, device=device, requires_grad=False)
     
+global g_cache_manager
+g_cache_manager = CacheTensorManager()
+
     
